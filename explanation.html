@@ -39,13 +39,39 @@
   text-align: right;
 }
 
-.close-btn,
-.copy-btn {
+.close-btn {
   background-color: transparent;
   border: none;
   cursor: pointer;
   font-size: 16px;
 }    
+
+#follow-up-input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+  }
+  #follow-up-input:focus {
+    outline: none;
+    border-color: #4CAF50;
+  }  
+  #ask-btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  #ask-btn:hover {
+    background-color: #45a049;
+  }
   </style>
 </head>
 <body>
@@ -55,9 +81,10 @@
   </div>
   <div class="popup-content">
     <p class="explanation" id="selected-text">Loading...</p>
+    <input type="text" id="follow-up-input" placeholder="Ask a follow-up question...">
+    <button id="ask-btn">Ask</button>    
   </div>
   <div class="popup-footer">
-    <button class="copy-btn">Copy</button>
   </div>
 </div>
 
