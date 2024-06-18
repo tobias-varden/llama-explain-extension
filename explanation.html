@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Explanation</title>
+  <link rel="icon" href="explain48.png" type="image/x-icon">
+  <style>
+    .toolbar {
+        display: none;
+    }
+.popup {
+  width: 470px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+}
+
+.popup-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px;
+  background-color: #f1f1f1;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.popup-content {
+  padding: 16px;
+}
+
+.explanation {
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.popup-footer {
+  padding: 16px;
+  text-align: right;
+}
+
+.close-btn,
+.copy-btn {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+}    
+  </style>
+</head>
+<body>
+<div class="popup">
+  <div class="popup-header">
+    <h2 id="header">Explanation</h2>
+  </div>
+  <div class="popup-content">
+    <p class="explanation" id="selected-text">Loading...</p>
+  </div>
+  <div class="popup-footer">
+    <button class="copy-btn">Copy</button>
+  </div>
+</div>
+
+<script src="popup.js"></script>
+
+</body>
+</html>
+

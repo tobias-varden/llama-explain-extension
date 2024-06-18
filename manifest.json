@@ -1,0 +1,27 @@
+{
+    "manifest_version": 3,
+    "name": "Llama Explain",
+    "description": "This extension explains the text you have selected using a local LLM.",
+    "version": "1.0",
+    "permissions": [
+        "contextMenus",
+        "activeTab",
+        "scripting",
+        "tabs"
+    ],
+    "host_permissions": [
+        "<all_urls>"
+    ],
+    "background": {
+        "service_worker": "background.js"
+    },
+    "action": {
+        "default_popup": "explanation.html",
+        "default_icon": "explain16.png"
+    },
+    "icons": {
+        "16": "explain16.png",
+        "48": "explain48.png",
+        "128": "explain128.png"
+      }
+}
