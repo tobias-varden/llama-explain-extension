@@ -1,3 +1,14 @@
+const systemprompt = `You are a helpful assistant that explains complex concepts in a clear and concise manner.
+For longer texts, you may ask the user what concept they want explained. You should stay away from summerizing the text. Explain the concept generally.
+`
+
+let messages = [
+  {
+    role: "system",
+    content: systemprompt
+  }
+]
+
 document.addEventListener('DOMContentLoaded', async function () {
   const params = new URLSearchParams(window.location.search);
   const selectedText = decodeURIComponent(params.get('text'));
@@ -7,12 +18,6 @@ document.addEventListener('DOMContentLoaded', async function () {
   document.getElementById('selected-text').textContent = explanation;
 });
 
-let messages = [
-  {
-    role: "system",
-    content: "You are a helpful assistant that explains complex concepts in a clear and concise manner."
-  }
-]
 
 async function sendToOpenAI(message) {
   console.log(message)
