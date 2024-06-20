@@ -4,11 +4,12 @@
 
 This Chrome extension takes the selected word and uses a Language Model to explain it in
 simple terms. Whether you're a student, a professional, or just curious about the world around you, this tool is
-designed to help you understand complex concepts and expand your vocabulary.
+designed to help you understand complex concepts and expand your vocabulary. Further, it requires no dependencies, making the code easy to review for security purposes.
 
 ## Features
 
 - Text Simplification: Explains complex text in a easy to understand language.
+- Secure: This code is WYSIWYG and does not require any dependencies to run.
 - Utilizes Ollama: Easy to switch to another model.
 
 ## Installation
